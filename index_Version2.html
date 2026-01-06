@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HomeSync — Quietly Smart</title>
+
+  <!-- Fonts (swap out for brand font if available) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <!-- GSAP & ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <main id="brochure">
+
+    <!-- PAGE 1 — HERO / HERO -->
+    <section class="panel hero" id="scene-1" aria-label="Home — Hero">
+      <div class="hero-inner">
+        <div class="logo-wrap" aria-hidden="false">
+          <!-- Inline logo SVG -->
+          <svg class="logo" width="220" height="60" viewBox="0 0 220 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="220" height="60" rx="8" fill="#FFF8F0"/>
+            <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Playfair Display, serif" font-size="20" fill="#222">HomeSync</text>
+          </svg>
+          <div class="slogan">Quietly Smart</div>
+        </div>
+
+        <div class="switch-grid" aria-hidden="true">
+          <!-- Using provided hero image showing devices as visual content -->
+          <img class="grid-item" src="assets/img3.jpg" alt="HomeSync device layout — hero image (provided)">
+          <img class="grid-item" src="assets/img3.jpg" alt="HomeSync device layout — hero image (provided)">
+          <img class="grid-item" src="assets/img3.jpg" alt="HomeSync device layout — hero image (provided)">
+          <img class="grid-item" src="assets/img3.jpg" alt="HomeSync device layout — hero image (provided)">
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 2 — PRODUCT OVERVIEW -->
+    <section class="panel overview" id="scene-2" aria-label="Product Overview">
+      <div class="overview-inner">
+        <div class="overview-image">
+          <!-- close-up / device visual from provided hero image -->
+          <img src="assets/img3.jpg" alt="HomeSync switch close up — product overview (provided)">
+        </div>
+        <div class="overview-text">
+          <h2>Effortless Control for Modern Living</h2>
+          <p class="muted">Designed to disappear into the home and make living simpler.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 3 — SWITCH COLOR VARIANTS (HORIZONTAL) -->
+    <section class="panel variants" id="scene-3" aria-label="Color Variants">
+      <div class="variants-track">
+        <!-- For the variants scene we use the provided models collage (img1) across slides.
+             If you want separate cropped images for each variant later, swap these with four files. -->
+        <div class="variant" data-color="Matte White">
+          <img src="assets/img1.jpg" alt="Matte White variant (provided)">
+        </div>
+        <div class="variant" data-color="Deep Black">
+          <img src="assets/img1.jpg" alt="Deep Black variant (provided)">
+        </div>
+        <div class="variant" data-color="Warm Brown">
+          <img src="assets/img1.jpg" alt="Warm Brown variant (provided)">
+        </div>
+        <div class="variant" data-color="Soft Grey">
+          <img src="assets/img1.jpg" alt="Soft Grey variant (provided)">
+        </div>
+      </div>
+      <div class="variant-caption" aria-hidden="true"></div>
+    </section>
+
+    <!-- PAGE 4 — PANELS & DISPLAYS -->
+    <section class="panel panels" id="scene-4" aria-label="Smart Panels and Displays">
+      <div class="panels-stage">
+        <!-- Using the models collage as layered panels (left / center / right feel) -->
+        <div class="panel-item depth depth-1"><img src="assets/img1.jpg" alt="Smart panel one (provided)"></div>
+        <div class="panel-item depth depth-2"><img src="assets/img1.jpg" alt="Smart panel two (provided)"></div>
+        <div class="panel-item depth depth-3"><img src="assets/img1.jpg" alt="Smart panel three (provided)"></div>
+      </div>
+    </section>
+
+    <!-- PAGE 5 — TECHNICAL SPECIFICATIONS -->
+    <section class="panel specs" id="scene-5" aria-label="Technical Specifications">
+      <div class="specs-inner">
+        <div class="specs-image">
+          <!-- anchor the spec sheet image you provided -->
+          <img src="assets/img4.jpg" alt="Technical specifications sheet (provided)">
+        </div>
+        <div class="specs-list" role="list" aria-label="Specifications">
+          <div class="spec-row" role="listitem"><strong>Voltage</strong><span>220–240V AC, 50/60Hz</span></div>
+          <div class="spec-row" role="listitem"><strong>Load Capacity</strong><span>5A / Gang (typical)</span></div>
+          <div class="spec-row" role="listitem"><strong>Connectivity</strong><span>Wi‑Fi 2.4GHz, Capacitive Touch</span></div>
+          <div class="spec-row" role="listitem"><strong>Compatibility</strong><span>iOS / Android / Major Hubs</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 6 — INSTALLATION & COMPATIBILITY -->
+    <section class="panel install" id="scene-6" aria-label="Installation and Compatibility">
+      <div class="install-stage">
+        <div class="install-icon icon-1">
+          <img src="assets/icon-wiring.svg" alt="Pakistani wiring compatible">
+          <div class="label">Pakistani wiring compatible</div>
+        </div>
+        <div class="install-icon icon-2">
+          <img src="assets/icon-box.svg" alt="Standard wall box support">
+          <div class="label">Standard wall box support</div>
+        </div>
+        <div class="install-icon icon-3">
+          <img src="assets/icon-easy.svg" alt="Easy installation">
+          <div class="label">Easy installation</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 7 — PACKAGING & DEALER MATERIAL -->
+    <section class="panel showroom" id="scene-7" aria-label="Packaging and Dealer Material">
+      <div class="showroom-stage">
+        <div class="packaging"><img src="assets/img2.jpg" alt="HomeSync packaging & dealer materials (provided)"></div>
+        <div class="catalog"><img src="assets/img2.jpg" alt="Dealer catalog (provided)"></div>
+        <div class="cards"><img src="assets/img2.jpg" alt="Product cards (provided)"></div>
+      </div>
+      <div class="fixed-logo" aria-hidden="true">
+        <svg class="logo-sm" width="120" height="36" viewBox="0 0 120 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="120" height="36" rx="6" fill="#FFF8F0"/>
+          <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Playfair Display, serif" font-size="14" fill="#222">HomeSync</text>
+        </svg>
+      </div>
+    </section>
+
+    <!-- PAGE 8 — DEALERS & PARTNERS (SOFT EXIT) -->
+    <section class="panel dealers" id="scene-8" aria-label="Become an Authorized Dealer">
+      <div class="dealers-inner">
+        <h2>Become an Authorized HomeSync Dealer</h2>
+        <form class="dealer-form" aria-label="Dealer enquiry form">
+          <label>
+            Business email
+            <input type="email" name="email" placeholder="you@company.com" required>
+          </label>
+          <label>
+            Country / Region
+            <input type="text" name="country" placeholder="Pakistan" required>
+          </label>
+          <button type="submit" class="btn-primary">Request Info</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
